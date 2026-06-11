@@ -40,28 +40,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .navbar .navbar-logo {
     font-size: 2rem;
     font-weight: 700;
@@ -423,7 +401,7 @@ body {
 }
 
 /* Tablet */
-@media (max-width: 768px) 
+@media (max-width: 768px) { 
     html {
         font-size: 62.5%;
     }
@@ -460,7 +438,7 @@ body {
         transform: scaleX(0.3);
     }
 
-
+}
 
 
 
