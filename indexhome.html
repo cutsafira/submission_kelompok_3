@@ -43,13 +43,27 @@
    
 </main>
  </section>
- <!-- hero section end-->
-    <!-- feather icon -->
-    <script>
-      feather.replace();
-    </script>
+<footer class="footer">
+    <p>esjo_pisangijo</p>
+</footer>
 
-    <!-- On Javascript -->
-     <script src="js/script.js"></script>
+<script>
+feather.replace();
+
+const navbarNav = document.querySelector('.navbar-nav');
+
+document.querySelector('#hamburger-menu').onclick = () => {
+    navbarNav.classList.toggle('active');
+};
+
+const hamburger = document.querySelector('#hamburger-menu');
+
+document.addEventListener('click', function(e) {
+    if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+        navbarNav.classList.remove('active');
+    }
+});
+</script>
+
 </body>
 </html>

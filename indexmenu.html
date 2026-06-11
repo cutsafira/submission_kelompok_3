@@ -30,9 +30,73 @@
     <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
 </div>
 </nav>
- <!-- navbar end -->
-  
-</nav>
+   <!-- menu section start -->
+  <section id="menu" class="menu">
+
+    <h1><span>menu</span> kami</h1>
+
+    <p class="menu-desc">
+        Nikmati berbagai pilihan pisang ijo dengan cita rasa khas dan kesegaran yang membuat harimu lebih menyenangkan
+    </p>
+<div class="menu-container">
+
+    <!-- MENU ORIGINAL -->
+    <div class="menu-card">
+        <img src="img/esjoo.png" alt="ORIGINAL" >
+        <h3>ORIGINAL</h3>
+
+        <!-- DESKRIPSI -->
+        <p class="desc">
+            Es pisang ijo original dengan cita rasa tradisional khas yang segar dan lezat.
+        </p>
+
+        <!-- HARGA -->
+        <p class="price">IDR 12.000</p>
+    </div>
+
+    <!-- MENU ANDALANKU -->
+    <div class="menu-card">
+        <img src="img/eskrim.png" alt="ANDALANKU" >
+        <h3>ANDALANKU</h3>
+
+        <!-- DESKRIPSI -->
+        <p class="desc">
+            Es pisang ijo yang dipadukan dengan es krim lembut sehingga memberikan rasa yang lebih nikmat dan menyegarkan.
+        </p>
+
+        <!-- HARGA -->
+        <p class="price">IDR 17.000</p>
+    </div>
+
+</div>
+
+</section>
+     <!-- menu section end -->
+
+<footer class="footer">
+    <p>esjo_pisangijo</p>
+</footer>
+
+
+<script>
+    feather.replace();
+
+    const navbarNav = document.querySelector('.navbar-nav');
+
+    document.querySelector('#hamburger-menu').onclick = () => {
+        navbarNav.classList.toggle('active');
+    };
+
+    const hamburger = document.querySelector('#hamburger-menu');
+
+    document.addEventListener('click', function(e) {
+        if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+            navbarNav.classList.remove('active');
+        }
+    });
+</script>
+
+
 
 </body>
 </html>

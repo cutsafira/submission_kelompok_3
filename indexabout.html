@@ -33,19 +33,68 @@
  <!-- navbar end -->
   
  <!-- about section start -->
-<section id="about" class="about">
-    <h2><span>About</span>Us</h2>
-    <div class="row">
-        <div class="about-img">
-            <img src="img/pisangijo.png" alt="About esjo">
-    </div>
-    <div class="content">
-        <h3>Kenapa kamu harus mencoba esjo_pisangijo?</h3>
-        <p><b>Karena esjo_pisangijo meruoakan minuman khas sulawesi tradisional dengan perpaduan pisang dan santan yang dimodif menyesuaikan zaman</b> </p>
-        <p><b>Selain itu esjo_pisangijo ini jajanan tradisional yang disukai semua kalangan , sehingga dari dulu sampai sekarang esjo_pisangijo bisa bersaing dengan jajanan modern lainnya dan tidak kalah oleh zaman</b></p>
-    </div>
-</section>
+    <main class="about-logo">
+
+
+ 
+    <section id="about" class="about">
+        <h2><span>About</span> Us</h2>
+        <div class="row">
+            <div class="about-img">
+                <img src="img/logoesjo.png" alt="About esjo">
+        </div>
+        
+        <div class="content">
+            <h3>Kenapa kamu harus mencoba esjo_pisangijo?</h3>
+            <p><b>Karena esjo_pisangijo meruoakan minuman khas sulawesi tradisional dengan perpaduan pisang dan santan yang dimodif menyesuaikan zaman</b> </p>
+            <p><b>Selain itu esjo_pisangijo ini jajanan tradisional yang disukai semua kalangan , sehingga dari dulu sampai sekarang esjo_pisangijo bisa bersaing dengan jajanan modern lainnya dan tidak kalah oleh zaman</b></p>
     
-</nav>
+
+    </section>
+
+    <section class="about-next">
+        <div class="tes">
+            <div class="item">
+            <img src="img/kolase bahan.png" alt="">
+                </div>
+
+                <div class="content-text">
+                <h2>Mari kenal dengan esjo_pisangijo</h2>
+
+                <p> <b>Halo kenalin ini esjo_pisangijo yang berbahan dasar pisang yang matang dan direbus lalu dilapisi kulit hijau </b></p>
+
+                <p> <b>Kemudian dicampur dengan santan dan ditaburi sirup</b> </p>
+
+                <p> <b>Hingga jadilah esjo_pisangijo yang enak dengan rasa tradisional </b></p>
+                </div>
+        </div>
+    </section>
+ </main>
+ 
+<footer class="footer">
+    <p>esjo_pisangijo</p>
+</footer>
+
+<script>
+    feather.replace();
+
+    const navbarNav = document.querySelector('.navbar-nav');
+
+    document.querySelector('#hamburger-menu').onclick = () => {
+        navbarNav.classList.toggle('active');
+    };
+
+    const hamburger = document.querySelector('#hamburger-menu');
+
+    document.addEventListener('click', function(e) {
+        if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+            navbarNav.classList.remove('active');
+        }
+    });
+    
+</script>
+
+    
+
 </body>
 </html>
